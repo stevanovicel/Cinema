@@ -1,0 +1,46 @@
+* {
+    background-color: #1d0707b2	;
+}
+
+a {
+    color: #eaeaea;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #847286;
+}
+
+.profile {
+    background-color: #0e070b;
+    color: #ffffff;
+    padding: 1px 30px;
+    position: relative;
+}
+
+.profile:hover {
+    background-color: #2e2416a7;
+}
+
+.profile:active {
+    background-color: #231b11;
+}
+
+
+mat-toolbar {
+    height: 80px;
+}
+
+mat-icon  {
+    background-color: #53443000;
+    position: relative;
+    left: 7px;
+    top: 3px;
+    
+}
+
+img {
+    width: 12%;
+    margin-top: 10px;
+    margin-left: 15px;
+}

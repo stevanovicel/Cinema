@@ -1,0 +1,43 @@
+
+.login {
+    height: 100vh;
+    background-image: url(../../../assets/bg/signup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    padding-bottom: 30px;
+}
+
+form {
+    padding: 30px 50px;
+    background-color:  #7f7c7c45; 
+    border-radius: 20px;
+}
+
+a {
+    color: #fdfdfd;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c347d3f5;
+}
+
+button {
+    margin-top: 30px;
+
+}
+
+mat-form-field {
+    width: 400px;
+}
+
+button:hover {
+    background-color: #844da8;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0.203);
+}

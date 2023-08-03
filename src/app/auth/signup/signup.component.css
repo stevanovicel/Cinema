@@ -1,0 +1,28 @@
+.signup {
+    height: 100vh;
+    background-image: url(../../../assets/bg/login1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    padding-bottom: 30px;
+}
+
+form {
+    padding: 30px 50px;
+    background-color:  #7f7c7c53; 
+    border-radius: 20px; 
+}
+
+mat-form-field {
+    width: 400px;
+}
+
+button:hover {
+    background-color: #844da8;
+}
+
+button {
+    background-color: rgb(112, 94, 28);
+}

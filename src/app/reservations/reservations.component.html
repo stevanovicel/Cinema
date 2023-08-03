@@ -1,0 +1,9 @@
+<!-- reservations.component.html -->
+<section class="reservations">
+    <h2>Reservations</h2>
+    <div *ngFor="let movie of reservations">
+      <p>{{ movie.name }} - {{ movie.release_date }}</p>
+    </div>
+    <button mat-raised-button (click)="clearReservations()">Clear Reservations</button>
+  </section>
+  

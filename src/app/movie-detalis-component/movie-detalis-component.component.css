@@ -1,0 +1,13 @@
+.dialog {  
+    background-color: rgb(29, 59, 85);
+    width: 80vh;
+    margin: 0;
+}
+
+.info {
+   align-items: end;
+}
+
+h2 {
+    margin: 0;
+}
