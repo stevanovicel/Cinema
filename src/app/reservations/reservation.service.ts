@@ -20,4 +20,12 @@ export class ReservationService {
   clearReservations() {
     this.reservations = [];
   }
+
+  // removeReservation(movie: Movies) {
+  //   const index = this.reservations.indexOf(movie);
+  //   if (index !== -1) {
+  //     this.reservations.splice(index, 1);
+  //   }
+  // }
+
 }

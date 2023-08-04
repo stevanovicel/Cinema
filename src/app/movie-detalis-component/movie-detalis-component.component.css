@@ -1,13 +1,21 @@
-.dialog {  
-    background-color: rgb(29, 59, 85);
-    width: 80vh;
-    margin: 0;
-}
-
-.info {
-   align-items: end;
+.dialog {
+  background-color: rgb(29, 59, 85);
+  width: 90vh;
+  padding: 20px; 
+  color: white; 
+  
 }
 
 h2 {
-    margin: 0;
+  margin-left: 50px; 
+  padding:0;
 }
+
+.header {
+  margin-bottom:0px; 
+}
+
+img {
+  margin-right: 20px;
+}
+

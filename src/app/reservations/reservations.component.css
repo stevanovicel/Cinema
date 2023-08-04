@@ -1,0 +1,60 @@
+h2 {
+    margin: 2% auto 4%;
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 50px;
+}
+
+p {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+button {
+    width: 20%;
+    background-color: #20206e;
+    margin: 3px;
+}
+
+button:hover {
+    background-color: #2d2d9a;
+}
+
+.reservations {
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+.bg {
+    height: 100vh;
+    background-image: url(../../assets/bg/movies_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+mat-table {
+    background-color: rgba(13, 28, 41, 0.455);
+}
+
+h1 {
+    margin: auto;
+    letter-spacing: 6px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+
+mat-form-field {
+    width: auto;
+}
+
+mat-cell {
+    padding: 15px;
+}
+
+ng-container {
+    align-items: center;
+}

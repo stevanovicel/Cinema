@@ -1,22 +1,27 @@
 <div class="dialog" fxFlex >
-    <div class="header" fxFlexAlign="auto">
-    <h2 mat-dialog-title>{{ movie.name }}</h2>
-    <div mat-dialog-actions fxLayout="row" fxLayoutAlign="end">
-        <button mat-button (click)="closeDialog()">Close</button>
+    <div class="header" fxLayout="row" fxLayoutAlign="space-between start">
+        <h2 mat-dialog-title>{{ movie.name }}</h2>
+        <mat-dialog-actions fxLayoutAlign="end">
+            <button mat-button (click)="closeDialog()">Close</button>
+        </mat-dialog-actions>
     </div>
-</div>
 
-<div mat-dialog-content fxLayout="row" fxLayoutAlign="space-around center" >
-        <img [src]="movie.photo" width="200" />
-        <div class="info" >
-        <p><strong>Genre:</strong> {{ movie.genre }}</p>
-        <p><strong>Release Date:</strong> {{ movie.release_date }}</p>
-        <p><strong>Description:</strong> {{ movie.description }}</p>
-        <p><strong>Duration:</strong> {{ movie.duration }}</p>
-        <p><strong>Time:</strong> {{ movie.time }}</p>
-        <p><strong>Price:</strong> $ {{ movie.price }}</p>
-        <p><strong>Amount:</strong> {{ movie.amount }}</p>
-        <button mat-raised-button (click)="buyTickets()">Buy tickets</button></div>
+    <div mat-dialog-content fxLayout="row" fxLayoutAlign="space-around center">
+        <img [src]="movie.photo" width="230" />
+        <div class="info">
+            <p><strong>Genre:</strong> {{ movie.genre }}</p>
+            <p><strong>Release Date:</strong> {{ movie.release_date }}</p>
+            <p><strong>Description:</strong> {{ movie.description }}</p>
+            <p><strong>Duration:</strong> {{ movie.duration }}</p>
+            <p><strong>Time:</strong> {{ movie.time }}</p>
+            <p><strong>Price:</strong> $ {{ movie.price }}</p>
+            <p><strong>Amount:</strong> {{ movie.amount }}
+                <button mat-raised-button (click)="addAmount(movie)">+</button>
+                <button mat-raised-button (click)="removeAmount(movie)" [disabled]="movie.amount < 2">-</button>
+            </p>
+            <p><strong>Total Price:</strong> $ {{ totalPrice }}</p>
+            <button mat-raised-button (click)="buyTickets()">Buy tickets</button>
+        </div>
     </div>
 
 </div>

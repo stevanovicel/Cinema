@@ -1,16 +1,16 @@
 <section class="bg">
   <section class="container" fxLayoutAlign="center" fxLayout="column">
-  <div class="search" fxLayoutAlign="center" >
-    <!-- Input za pretragu po nazivu filma -->
-    <mat-form-field>
-      <input matInput type="text" [(ngModel)]="searchValue" (keyup)="filterMovies()" placeholder="Search">
-    </mat-form-field>
-  </div>
+    <div class="search" fxLayoutAlign="center">
+      <!-- Input za pretragu po nazivu filma -->
+      <mat-form-field>
+        <input matInput type="text" [(ngModel)]="searchValue" (keyup)="filterMovies()" placeholder="Search">
+      </mat-form-field>
+    </div>
 
-<section class="movies-container" fxLayout="row wrap" fxLayoutAlign="center">
-  <div class="movie-card" *ngFor="let movie of filteredMovies" (click)="openMovieDetailsDialog(movie)">
-    <img [src]="movie.photo" width="230" />
-    <h1> {{ movie.name }} </h1>
-  </div>
-</section>
-</section>
+    <section class="movies-container" fxLayout="row wrap" fxLayoutAlign="center">
+      <div class="movie-card" *ngFor="let movie of filteredMovies" (click)="openMovieDetailsDialog(movie)">
+        <img [src]="movie.photo" width="230" />
+        <h1> {{ movie.name }} </h1>
+      </div>
+    </section>
+  </section>

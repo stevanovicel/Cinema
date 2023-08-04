@@ -32,7 +32,7 @@ export class MoviesService {
             amount: 1
         },
         {
-            id: 1,
+            id: 2,
             photo: 'assets/img/xmen.jpg',
             name: 'X-MEN',
             genre: 'Sci F',

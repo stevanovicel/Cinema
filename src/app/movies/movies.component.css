@@ -3,7 +3,6 @@
   flex-direction: column;
   gap: 20px;
   margin-top: 0px;
-  background-image: url(../../assets/bg/movies_bg.jpg);
 }
 
 .search {
@@ -19,9 +18,9 @@
 }
 
 .movie-card {
-  /* Opciono: Ako želite fiksnu širinu za svaku karticu, možete je postaviti ovdje */
   margin: 10px;
-  background-color: rgba(19, 40, 40, 0.474);
+  text-align: center;
+  text-transform: uppercase;
 }
 
 mat-form-field {
@@ -29,14 +28,15 @@ mat-form-field {
 }
 
 .bg {
-  height: 100vh;
   background-image: url(../../assets/bg/movies_bg.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
+
 h1 {
-  font-size: small;
+  font-size: 14px;
 }
 
 img:hover {

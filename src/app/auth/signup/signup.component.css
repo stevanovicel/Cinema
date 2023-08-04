@@ -1,6 +1,6 @@
 .signup {
     height: 100vh;
-    background-image: url(../../../assets/bg/login1.jpg);
+    background-image: url(../../../assets/bg/signup.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -11,12 +11,12 @@ h1 {
 
 form {
     padding: 30px 50px;
-    background-color:  #7f7c7c53; 
+    background-color:  #7f7c7c45; 
     border-radius: 20px; 
 }
 
 mat-form-field {
-    width: 400px;
+    min-width: 50vh;
 }
 
 button:hover {
