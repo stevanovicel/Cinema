@@ -1,13 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Movies } from '../movies/movies.service';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class ReservationService {
-  private reservations: Movies[] = [];
 
-  constructor() { }
+export class ReservationService {
+  private reservations: Array<Movies> = [];
+
 
   addReservation(movie: Movies) {
     this.reservations.push(movie);
@@ -27,5 +24,13 @@ export class ReservationService {
   //     this.reservations.splice(index, 1);
   //   }
   // }
+
+  removeFromCartList(movies: Movies) {
+    for(var i = 0; i < this.reservations.length; i++) {
+        if (this.reservations[i] == movies) {
+            this.reservations.splice(i, 1);
+        }
+    }
+}
 
 }

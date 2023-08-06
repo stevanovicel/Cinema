@@ -18,6 +18,7 @@ import { ReservationService } from './reservations/reservation.service';
 import { MoviesService } from './movies/movies.service';
 import { MovieDetalisComponentComponent } from './movie-detalis-component/movie-detalis-component.component';
 import { MatSelectModule } from '@angular/material/select';
+import { RemoveComponent } from './reservations/remove/remove.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MatSelectModule } from '@angular/material/select';
     LoginComponent,
     SignupComponent,
     ProfileComponent,
-    MovieDetalisComponentComponent
+    MovieDetalisComponentComponent,
+    RemoveComponent
   ],
   imports: [
     BrowserModule,

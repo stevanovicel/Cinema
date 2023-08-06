@@ -1,6 +1,6 @@
 <section class="bg"><section class="reservations" fxFlex  fxLayout="column">
   <h2 *ngIf="reservations.length > 0">Reservations</h2>
-  <mat-table [dataSource]="reservations" *ngIf="reservations.length > 0; else noReservations">
+  <mat-table  [dataSource]="reservations" *ngIf="reservations.length > 0; else noReservations">
     
     <!--  -->
     <ng-container matColumnDef="movie">
