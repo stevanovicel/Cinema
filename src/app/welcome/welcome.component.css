@@ -8,8 +8,13 @@
 }
 
 h1 {
-    margin: auto;
+    margin: 3%;
     padding-bottom: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    /* font-size:120px; */
+    color: rgba(201, 195, 215, 0.838);
 }
 
 p {
@@ -17,35 +22,35 @@ p {
     letter-spacing: 2px;
     font-size: 20px;
     text-align: center;
+    margin: 4%;
 }
 
 .section1 {
-    /* margin: 70px 20px 0px 2%; */
-    background-color:  #7f7c7c45;
-    padding: 30px 150px 20px 150px;
-   width: 100%;
+    margin: 5%;
+    background-color:  #7f7c7c29;
+    padding: 30px 180px 40px 180px;
+   width: auto;
+   height: auto;
 }
 
 .section2 {
-    margin: 70px 20px 20px 17%;
-    background-color:  #7f7c7c45;
-    padding: 30px 150px 20px 150px;
-    width: 80%;
+    margin: 5%;
+    background-color:  #7f7c7c29;
+    padding: 50px 180px 40px 180px;
+    width: auto;
+    height: auto;
 }
 
-a {
-    margin: auto;
-    /* padding-top: 50px; */
-}
 
 button:hover {
-    background-color: #6b583f;
+    background-color: #5c4d86;
     color: white;
 }
 
 button {
     padding: 10px 20px;
     letter-spacing: 1px;
+    width: 800px;
 }
 
 #movies {

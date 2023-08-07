@@ -1,8 +1,9 @@
 .dialog {
-  background-color: rgb(29, 59, 85);
-  width: 90vh;
+  background-color: rgb(6, 18, 28);
+  width: auto;
+  height: auto;
   padding: 20px; 
-  color: white; 
+  color: rgb(255, 255, 255); 
   
 }
 
@@ -19,3 +20,17 @@ img {
   margin-right: 20px;
 }
 
+iframe {
+  width: 560px;
+  height: 315px;
+  margin-left: 10px;
+}
+
+.info {
+  width: 35%;
+}
+
+p {
+  color: white;
+  letter-spacing: 1px;
+}

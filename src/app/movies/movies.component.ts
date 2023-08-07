@@ -8,11 +8,11 @@ import { MovieDetalisComponentComponent } from '../movie-detalis-component/movie
   templateUrl: './movies.component.html',
   styleUrls: ['./movies.component.css']
 })
-export class MoviesComponent implements OnInit, AfterViewInit{
+export class MoviesComponent implements OnInit{
 
   moviesSource: Movies[] = [];
   filteredMovies: Movies[] = [];
-   searchValue: string = '';
+  searchValue: string = '';
   selectedGenre: string = '';
 
   constructor(
@@ -31,9 +31,6 @@ export class MoviesComponent implements OnInit, AfterViewInit{
     );
   }
   
-  ngAfterViewInit(): void {
-    throw new Error('Method not implemented.');
-  }
   ngOnInit(): void {
     this.moviesSource = this.moviesService.getMovies();
     this.filteredMovies = this.moviesSource;
@@ -47,7 +44,6 @@ export class MoviesComponent implements OnInit, AfterViewInit{
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      // Ovde možete obraditi povratne informacije iz dijaloga, ako je potrebno
       console.log('Dijalog zatvoren.');
     });
   }

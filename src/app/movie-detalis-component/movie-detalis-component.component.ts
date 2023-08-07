@@ -4,6 +4,7 @@ import { Movies, MoviesService } from '../movies/movies.service';
 import { UserService } from '../auth/user.service';
 import { ReservationService } from '../reservations/reservation.service';
 import { MatSnackBar, MatSnackBarConfig } from '@angular/material/snack-bar';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-movie-detalis-component',
@@ -18,7 +19,8 @@ export class MovieDetalisComponentComponent {
     private dialogRef: MatDialogRef<MovieDetalisComponentComponent>,
     private reservationService: ReservationService,
     private moviesService: MoviesService,
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar,
+    private sanitizer: DomSanitizer
   ) { }
 
 closeDialog(): void {
@@ -52,5 +54,9 @@ updateTotalPrice() {
     };
 
     this.snackBar.open('Tickets reserved!', 'OK', config);
+  }
+
+  get sanitizedTrailerUrl(): SafeResourceUrl {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(this.movie.trailer);
   }
 }

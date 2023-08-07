@@ -1,4 +1,4 @@
-<div class="dialog" fxFlex >
+<div class="dialog" fxFlex>
     <div class="header" fxLayout="row" fxLayoutAlign="space-between start">
         <h2 mat-dialog-title>{{ movie.name }}</h2>
         <mat-dialog-actions fxLayoutAlign="end">
@@ -10,7 +10,7 @@
         <img [src]="movie.photo" width="230" />
         <div class="info">
             <p><strong>Genre:</strong> {{ movie.genre }}</p>
-            <p><strong>Release Date:</strong> {{ movie.release_date }}</p>
+            <p><strong>Released:</strong> {{ movie.release_date }}.</p>
             <p><strong>Description:</strong> {{ movie.description }}</p>
             <p><strong>Duration:</strong> {{ movie.duration }}</p>
             <p><strong>Time:</strong> {{ movie.time }}</p>
@@ -21,7 +21,12 @@
             </p>
             <p><strong>Total Price:</strong> $ {{ totalPrice }}</p>
             <button mat-raised-button (click)="buyTickets()">Buy tickets</button>
+
+
         </div>
+
+        <iframe width="560" height="315" [src]="sanitizedTrailerUrl" frameborder="0" allowfullscreen></iframe>
+
     </div>
 
 </div>
